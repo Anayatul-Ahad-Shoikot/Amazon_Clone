@@ -1,6 +1,6 @@
-const imgs = document.querySelectorAll('.hero-img');
-const prev_btn = document.querySelector('.prev');
-const next_btn = document.querySelector('.next');
+const imgs = document.querySelectorAll('.container .hero-slider .hero-img');
+const prev_btn = document.querySelector('.container .hero-slider .arrows .prev');
+const next_btn = document.querySelector('.container .hero-slider .arrows .next');
 
 let n = 0;
 

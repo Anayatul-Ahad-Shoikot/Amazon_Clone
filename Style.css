@@ -56,7 +56,7 @@ body {
 .nav-search {
     display: flex;
     align-items: center;
-    width: 980px;
+    flex-grow: 1;
 }
 
 .select select{
@@ -72,9 +72,9 @@ body {
 .nav-search input {
     border: none;
     height: 40px;
+    width: 100%;
     font-size: 1rem;
     padding-left: 8px;
-    width: 900px;
 }
 
 
@@ -179,36 +179,46 @@ body {
     font-size: .9rem;
     font-weight: 300;
 }
-.main{
+
+.container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 .hero-slider {
-    width: 1500px;
+    display: flex;
+    justify-content: center;
 }
-
 .hero-slider ul {
     display: flex;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .hero-img {
-    max-width: 100%;
+    min-width:100%;
     mask-image: linear-gradient(to bottom, #E3E6E6 50%, transparent 100%);
 }
-.hero-slider a {
+.hero-slider .arrows {
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     z-index: 1;
-    padding: 50px 10px 50px 10px;
     color: #0F1111;
     font-size: 140px;
     cursor: pointer;
     align-items: center;
 }
-
-.next {
-    left: 1430px;
+.hero-slider a {
+    align-items: center;
+    text-decoration: none;
+    height: 300px;
+    font-weight: lighter;
+    color: black;
+    padding-top: 65px;
 }
 
 .hero-slider a:hover {
